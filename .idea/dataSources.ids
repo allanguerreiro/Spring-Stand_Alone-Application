@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="obmep_historico@homologacao" uuid="9b09aa8a-9ea0-4302-9e2b-6bb39e48434b">
+    <database-info product="MySQL" version="5.1.73" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="obmep_historico"/>
+      <table id="2" parent="1" name="OBMEP_ALUNO"/>
+      <table id="3" parent="1" name="OBMEP_ALUNO_AUD"/>
+      <table id="4" parent="1" name="OBMEP_ALUNO_SOBERANO"/>
+      <table id="5" parent="1" name="OBMEP_ALUNO_TEMP_2014"/>
+      <table id="6" parent="1" name="OBMEP_ESCOLA"/>
+      <table id="7" parent="1" name="OBMEP_HISTORICO_ALUNO"/>
+      <table id="8" parent="1" name="OBMEP_MUNICIPIO"/>
+      <table id="9" parent="1" name="OBMEP_PARTICIPACAO_ALUNO"/>
+      <table id="10" parent="1" name="OBMEP_TIPO_PREMIO"/>
+      <table id="11" parent="1" name="OBMEP_UF"/>
+      <table id="12" parent="1" name="REVINFO"/>
+      <table id="13" parent="1" name="USER_AUTH"/>
+      <table id="14" parent="1" name="USER_DETAILS"/>
+      <column id="15" parent="2" name="CD_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="16" parent="2" name="IN_ADVENTISTA">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="17" parent="2" name="CD_ANO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="18" parent="2" name="IN_CADEIRANTE">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="19" parent="2" name="CD_CODIGO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="20" parent="2" name="NM_CPF">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="21" parent="2" name="DT_NASCIMENTO">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="22" parent="2" name="IN_DETENTO">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="23" parent="2" name="NM_EMAIL">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="24" parent="2" name="NM_CEP">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="25" parent="2" name="NM_BAIRRO">
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="26" parent="2" name="NM_COMPLEMENTO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="27" parent="2" name="NM_ENDERECO">
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="28" parent="2" name="NM_NUMERO">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="29" parent="2" name="DS_DEF_DESCRICAO">
+        <data-type>varchar(400)</data-type>
+      </column>
+      <column id="30" parent="2" name="IN_PROVA_BRAILE">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="31" parent="2" name="IN_PROVA_LIBRA_DEFICIENTE_AUDITIVO">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="32" parent="2" name="IN_PROVA_AMPLIADA">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="33" parent="2" name="CD_NIVEL">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="34" parent="2" name="NM_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="35" parent="2" name="VL_NOTA">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="36" parent="2" name="IN_OUTRAS_DEF">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="37" parent="2" name="IN_PIC">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="38" parent="2" name="CD_SEXO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="39" parent="2" name="CD_DDD_FONE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="40" parent="2" name="NM_FONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="41" parent="2" name="CD_TIPO_FONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="42" parent="2" name="CD_DDD_FONE2">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="43" parent="2" name="NM_FONE2">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="44" parent="2" name="CD_TIPO_FONE2">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="45" parent="2" name="CD_TURNO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="46" parent="2" name="NR_EXERCICIO">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="47" parent="2" name="CD_MUNICIPIO">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="48" parent="2" name="CD_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="49" parent="2" name="CD_TIPO_PREMIO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="50" parent="2" name="NM_MAE_ALUNO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <index id="51" parent="2" name="FK_126rp5x9wjanjtbqb5qd0fj3v">
+        <columns>CD_ESCOLA</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="52" parent="2" name="FK_2u1aspqpqr40ax5r66xrqlkct">
+        <columns>CD_MUNICIPIO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="53" parent="2" name="FK_djy9x1591auev3o8j1ay44pfq">
+        <columns>CD_TIPO_PREMIO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="54" parent="2" name="UK_hc5pdjfls0v91ej5wwv1to81s">
+        <columns>CD_CODIGO
+NR_EXERCICIO</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="55" parent="2" name="PRIMARY">
+        <columns>CD_ALUNO</columns>
+        <primary>1</primary>
+      </key>
+      <key id="56" parent="2" name="UK_hc5pdjfls0v91ej5wwv1to81s">
+        <columns>CD_CODIGO
+NR_EXERCICIO</columns>
+        <underlying-index>UK_hc5pdjfls0v91ej5wwv1to81s</underlying-index>
+      </key>
+      <foreign-key id="57" parent="2" name="FK_126rp5x9wjanjtbqb5qd0fj3v">
+        <columns>CD_ESCOLA</columns>
+        <ref-key>~.OBMEP_ESCOLA.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="58" parent="2" name="FK_2u1aspqpqr40ax5r66xrqlkct">
+        <columns>CD_MUNICIPIO</columns>
+        <ref-key>~.OBMEP_MUNICIPIO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="59" parent="2" name="FK_djy9x1591auev3o8j1ay44pfq">
+        <columns>CD_TIPO_PREMIO</columns>
+        <ref-key>~.OBMEP_TIPO_PREMIO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="60" parent="3" name="CD_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="61" parent="3" name="REV">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="62" parent="3" name="REVTYPE">
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="63" parent="3" name="NR_EXERCICIO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="64" parent="3" name="CD_TIPO_PREMIO">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="65" parent="3" name="FK_ce3w94qiv6b1bnq277b7p3lm0">
+        <columns>REV</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="66" parent="3" name="PRIMARY">
+        <columns>CD_ALUNO
+REV</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="67" parent="3" name="FK_ce3w94qiv6b1bnq277b7p3lm0">
+        <columns>REV</columns>
+        <ref-key>~.REVINFO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="68" parent="4" name="CD_HISTORICO_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="69" parent="4" name="NM_CPF">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="70" parent="4" name="IN_ADVENTISTA">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="71" parent="4" name="CD_ANO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="72" parent="4" name="IN_CADEIRANTE">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="73" parent="4" name="CD_CODIGO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="74" parent="4" name="DT_NASCIMENTO">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="75" parent="4" name="IN_DETENTO">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="76" parent="4" name="NM_EMAIL">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="77" parent="4" name="NM_CEP">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="78" parent="4" name="NM_BAIRRO">
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="79" parent="4" name="NM_COMPLEMENTO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="80" parent="4" name="NM_ENDERECO">
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="81" parent="4" name="NM_NUMERO">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="82" parent="4" name="DS_DEF_DESCRICAO">
+        <data-type>varchar(400)</data-type>
+      </column>
+      <column id="83" parent="4" name="IN_PROVA_BRAILE">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="84" parent="4" name="IN_PROVA_LIBRA_DEFICIENTE_AUDITIVO">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="85" parent="4" name="IN_PROVA_AMPLIADA">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="86" parent="4" name="CD_NIVEL">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="87" parent="4" name="NM_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="88" parent="4" name="IN_OUTRAS_DEF">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="89" parent="4" name="IN_PIC">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="90" parent="4" name="CD_SEXO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="91" parent="4" name="CD_DDD_FONE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="92" parent="4" name="NM_FONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="93" parent="4" name="CD_TIPO_FONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="94" parent="4" name="CD_DDD_FONE2">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="95" parent="4" name="NM_FONE2">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="96" parent="4" name="CD_TIPO_FONE2">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="97" parent="4" name="CD_TURNO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="98" parent="4" name="IN_FIXADO">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="99" parent="4" name="NR_VERSAO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="100" parent="4" name="CD_MUNICIPIO">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="101" parent="4" name="CD_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="102" parent="4" name="NM_MAE_ALUNO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <index id="103" parent="4" name="FK_f1dqhf4bt195dk35thfjlatb0">
+        <columns>CD_ESCOLA</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="104" parent="4" name="FK_l1aglh3bgpb2cexmgjutfbs3c">
+        <columns>CD_MUNICIPIO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="105" parent="4" name="UK_qb6fytwafe5isgg51ckt8oo1a">
+        <columns>CD_CODIGO</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="106" parent="4" name="PRIMARY">
+        <columns>CD_HISTORICO_ALUNO</columns>
+        <primary>1</primary>
+      </key>
+      <key id="107" parent="4" name="UK_qb6fytwafe5isgg51ckt8oo1a">
+        <columns>CD_CODIGO</columns>
+        <underlying-index>UK_qb6fytwafe5isgg51ckt8oo1a</underlying-index>
+      </key>
+      <foreign-key id="108" parent="4" name="FK_f1dqhf4bt195dk35thfjlatb0">
+        <columns>CD_ESCOLA</columns>
+        <ref-key>~.OBMEP_ESCOLA.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="109" parent="4" name="FK_h2w6niu52g12q00vgf0vv4ji8">
+        <columns>CD_HISTORICO_ALUNO</columns>
+        <ref-key>~.OBMEP_HISTORICO_ALUNO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="110" parent="4" name="FK_l1aglh3bgpb2cexmgjutfbs3c">
+        <columns>CD_MUNICIPIO</columns>
+        <ref-key>~.OBMEP_MUNICIPIO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="111" parent="5" name="NR_EXERCICIO">
+        <mandatory>1</mandatory>
+        <data-type>int(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="112" parent="5" name="IN_CADEIRANTE">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="113" parent="5" name="CD_CODIGO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="114" parent="5" name="NM_CPF">
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="115" parent="5" name="DT_NASCIMENTO">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="116" parent="5" name="NM_EMAIL">
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="117" parent="5" name="NM_CEP">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="118" parent="5" name="NM_BAIRRO">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="119" parent="5" name="NM_COMPLEMENTO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="120" parent="5" name="NM_ENDERECO">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="121" parent="5" name="NM_NUMERO">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="122" parent="5" name="DS_DEF_DESCRICAO">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="123" parent="5" name="IN_PROVA_BRAILE">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="124" parent="5" name="IN_PROVA_LIBRA_DEFICIENTE_AUDITIVO">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="125" parent="5" name="IN_PROVA_AMPLIADA">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="126" parent="5" name="CD_NIVEL">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="127" parent="5" name="NM_ALUNO">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="128" parent="5" name="VL_NOTA">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="129" parent="5" name="IN_OUTRAS_DEF">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="130" parent="5" name="IN_PIC">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="131" parent="5" name="CD_SEXO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="132" parent="5" name="CD_MUNICIPIO">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="133" parent="5" name="CD_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="134" parent="5" name="CD_TIPO_PREMIO">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="135" parent="5" name="CD_ANO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="136" parent="5" name="CD_TURNO">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="137" parent="5" name="IN_ADVENTISTA">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="138" parent="5" name="IN_DETENTO">
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="139" parent="5" name="CD_DDD_FONE">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="140" parent="5" name="NM_FONE">
+        <data-type>varchar(116)</data-type>
+      </column>
+      <column id="141" parent="5" name="CD_TIPO_FONE">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="142" parent="5" name="CD_DDD_FONE2">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="143" parent="5" name="NM_FONE2">
+        <data-type>varchar(116)</data-type>
+      </column>
+      <column id="144" parent="5" name="CD_TIPO_FONE2">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="145" parent="6" name="CD_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="146" parent="6" name="CD_MEC_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="147" parent="6" name="NR_EXERCICIO">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="148" parent="6" name="NM_ESCOLA">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="149" parent="6" name="CD_MUNICIPIO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <index id="150" parent="6" name="FK_e5llhe8qfc6yfqe5cgocby15x">
+        <columns>CD_MUNICIPIO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="151" parent="6" name="UK_ruw23te7tk5k1rafigw72pkht">
+        <columns>CD_MEC_ESCOLA
+NR_EXERCICIO</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="152" parent="6" name="PRIMARY">
+        <columns>CD_ESCOLA</columns>
+        <primary>1</primary>
+      </key>
+      <key id="153" parent="6" name="UK_ruw23te7tk5k1rafigw72pkht">
+        <columns>CD_MEC_ESCOLA
+NR_EXERCICIO</columns>
+        <underlying-index>UK_ruw23te7tk5k1rafigw72pkht</underlying-index>
+      </key>
+      <foreign-key id="154" parent="6" name="FK_e5llhe8qfc6yfqe5cgocby15x">
+        <columns>CD_MUNICIPIO</columns>
+        <ref-key>~.OBMEP_MUNICIPIO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="155" parent="7" name="CD_HISTORICO_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="156" parent="7" name="DT_CRIACAO">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="157" parent="7" name="DT_ULT_VALIDACAO">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="158" parent="7" name="IN_ENCERRADO">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="159" parent="7" name="NR_EXERCICIO_VALIDADO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="160" parent="7" name="NM_RESP_CRIACAO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="161" parent="7" name="NM_RESP_ULT_VALIDACAO">
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="162" parent="7" name="NR_VERSAO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="163" parent="7" name="IN_COMPLETO">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <key id="164" parent="7" name="PRIMARY">
+        <columns>CD_HISTORICO_ALUNO</columns>
+        <primary>1</primary>
+      </key>
+      <column id="165" parent="8" name="CD_MUNICIPIO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="166" parent="8" name="NM_MUNICIPIO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="167" parent="8" name="CD_UF">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <index id="168" parent="8" name="FK_a66r2cr8c54lhatsfgbfscc6v">
+        <columns>CD_UF</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="169" parent="8" name="PRIMARY">
+        <columns>CD_MUNICIPIO</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="170" parent="8" name="FK_a66r2cr8c54lhatsfgbfscc6v">
+        <columns>CD_UF</columns>
+        <ref-key>~.OBMEP_UF.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="171" parent="9" name="CD_PARTICIPACAO_ALUNO">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="172" parent="9" name="DT_RESP_ASSOCIACAO">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="173" parent="9" name="DS_JUST_ASSOCIACAO">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="174" parent="9" name="NM_RESP_ASSOCIACAO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="175" parent="9" name="CD_STATUS">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="176" parent="9" name="NR_VERSAO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="177" parent="9" name="CD_ALUNO">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="178" parent="9" name="CD_HISTORICO_ALUNO">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="179" parent="9" name="NR_EXERCICIO_NAO_TRATADO">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="180" parent="9" name="NR_EXERCICIO_NAO_PARTICIPACAO">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="181" parent="9" name="FK_1tdw0e3v6ug8g827o9s34e0g3">
+        <columns>CD_HISTORICO_ALUNO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="182" parent="9" name="FK_jwwpfwn953spsol5gy71b5qd2">
+        <columns>CD_ALUNO</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="183" parent="9" name="PRIMARY">
+        <columns>CD_PARTICIPACAO_ALUNO</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="184" parent="9" name="FK_1tdw0e3v6ug8g827o9s34e0g3">
+        <columns>CD_HISTORICO_ALUNO</columns>
+        <ref-key>~.OBMEP_HISTORICO_ALUNO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="185" parent="9" name="FK_jwwpfwn953spsol5gy71b5qd2">
+        <columns>CD_ALUNO</columns>
+        <ref-key>~.OBMEP_ALUNO.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="186" parent="10" name="CD_TIPO_PREMIO">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="187" parent="10" name="NM_DESCRICAO">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="188" parent="10" name="PRIMARY">
+        <columns>CD_TIPO_PREMIO</columns>
+        <primary>1</primary>
+      </key>
+      <column id="189" parent="11" name="CD_UF">
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="190" parent="11" name="NM_UF">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <key id="191" parent="11" name="PRIMARY">
+        <columns>CD_UF</columns>
+        <primary>1</primary>
+      </key>
+      <column id="192" parent="12" name="REV">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="193" parent="12" name="REVTSTMP">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <key id="194" parent="12" name="PRIMARY">
+        <columns>REV</columns>
+        <primary>1</primary>
+      </key>
+      <column id="195" parent="13" name="USERNAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="196" parent="13" name="AUTHORITY">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <index id="197" parent="13" name="USERNAME">
+        <columns>USERNAME</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <foreign-key id="198" parent="13" name="FK_USER_AUTH">
+        <columns>USERNAME</columns>
+        <ref-key>~.USER_DETAILS.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="199" parent="14" name="USERNAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="200" parent="14" name="PASSWORD">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="201" parent="14" name="PRIMARY">
+        <columns>USERNAME</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="pic_historico@homologacao" uuid="82ad5f99-41d6-45ef-b558-526801988cb6">
+    <database-info product="MySQL" version="5.1.73" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="pic_historico"/>
+      <table id="2" parent="1" name="alunos_historico_geral"/>
+      <column id="3" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="4" parent="2" name="programa_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="5" parent="2" name="premiacao_codigo_obmep">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="6" parent="2" name="premiacao_nivel">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="7" parent="2" name="premiacao_ano">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="8" parent="2" name="programa">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="9" parent="2" name="nome">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="10" parent="2" name="sexo">
+        <data-type>varchar(9)</data-type>
+      </column>
+      <column id="11" parent="2" name="data_nascimento">
+        <data-type>date</data-type>
+      </column>
+      <column id="12" parent="2" name="cpf">
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="13" parent="2" name="endereco_logradouro">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="14" parent="2" name="endereco_numero">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="15" parent="2" name="endereco_complemento">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="16" parent="2" name="endereco_bairro">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="17" parent="2" name="endereco_municipio_id">
+        <data-type>bigint(20) unsigned</data-type>
+      </column>
+      <column id="18" parent="2" name="endereco_uf">
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="19" parent="2" name="endereco_cep">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="20" parent="2" name="email">
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="21" parent="2" name="telefone">
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="22" parent="2" name="telefone_alt">
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="23" parent="2" name="telefone_celular">
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="24" parent="2" name="aluno_sem_bolsa">
+        <data-type>tinyint(4) unsigned</data-type>
+      </column>
+      <key id="25" parent="2" name="PRIMARY">
+        <columns>id
+programa_id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
